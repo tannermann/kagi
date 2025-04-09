@@ -25,7 +25,6 @@ benchmark(court, MY_NAME, NUM_JUDGES, OTHER_DEFENDANTS);
 /*
 
 First iteration:
-
 1. Sort defendents by name
 2. Get my hearing index
 3. Get hearing slot in human terms (+1)
@@ -37,6 +36,6 @@ Second iteration:
 1. Removed unnecessary variables: notMeDefendants, allDefendants
 
 Third iteration:
-2. Return the result of the calculation directly
+1. Return the result of the calculation directly
 
 */
