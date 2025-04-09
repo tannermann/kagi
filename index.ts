@@ -10,8 +10,6 @@ const court = (myName: string, numJudges: number, otherDefendants: string): numb
   return Math.ceil(myHearingSlot / numJudges) * HEARING_TIME_MINS;
 };
 
-console.log(court(MY_NAME, NUM_JUDGES, OTHER_DEFENDANTS));
-
 // Benchmarking
 const benchmark = (fn: Function, ...args: [string, number, string]) => {
   const start = performance.now();
