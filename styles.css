@@ -1,0 +1,47 @@
+html {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+input,
+label {
+  cursor: pointer;
+}
+
+.recipes {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  /* Left and right gutters each also get 8px from half of the gap for 16px total */
+  padding: 0 8px;
+
+  @media (min-width: 720px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+article {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 24px;
+}
