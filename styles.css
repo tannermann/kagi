@@ -13,6 +13,7 @@ h1 {
 ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 li {
@@ -44,4 +45,38 @@ article {
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 24px;
+}
+
+summary::marker {
+  content: "";
+}
+
+details {
+  position: relative;
+  min-height: 36px;
+
+  summary::before {
+    content: "See More";
+  }
+
+  &[open] {
+    padding-bottom: 36px;
+
+    summary::before {
+      content: "See Less";
+    }
+  }
+}
+
+summary {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+/* Hide the "See More" button and collapsible section if there are 10 or fewer items */
+.ingredient-list:not(:has(li:nth-child(11))) .see-more {
+  display: none;
 }

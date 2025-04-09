@@ -13,7 +13,7 @@
       <div class="recipes">
         <article>
           <h2>Pecan Pie</h2>
-          <ul>
+          <ul class="ingredient-list">
             <li>
               <label>
                 <input type="checkbox" value="eggs" />
@@ -74,17 +74,43 @@
                 ¼ tsp salt
               </label>
             </li>
+            <!-- Collapsible list items -->
             <li>
-              <label>
-                <input type="checkbox" value="pie shell" />
-                1 unbaked 9-inch pie shell
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" value="pecans" />
-                2 cups coarsely chopped roasted pecans
-              </label>
+              <details>
+                <summary aria-label="List expansion toggle"></summary>
+                <ul>
+                  <li>
+                    <label>
+                      <input type="checkbox" value="pie shell" />
+                      1 unbaked 9-inch pie shell
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" value="pecans" />
+                      2 cups coarsely chopped roasted pecans
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" value="love" />
+                      Love
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" value="care" />
+                      Care
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" value="Kindness" />
+                      Kindness
+                    </label>
+                  </li>
+                </ul>
+              </details>
             </li>
           </ul>
         </article>
