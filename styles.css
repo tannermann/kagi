@@ -76,7 +76,23 @@ summary {
   cursor: pointer;
 }
 
-/* Hide the "See More" button and collapsible section if there are 10 or fewer items */
+/*
+
+Hide the "See More" button and collapsible section if there are 10 or fewer items
+
+The only caveat is that if you use the browser dev tools to delete an item from this list
+instead of programmatically deleting it and re-indexing the array of the list items using basic JS
+the "See More" button will be hidden whilst there are actually 11+ list items still present.
+
+However that caveat likely isn't a problem in the real world where we'd get data from an API
+and use basic JS to re-index the array of the list items upon deleting an item.
+
+*/
 .ingredient-list:not(:has(li:nth-child(11))) .see-more {
+  display: none;
+}
+
+/* When the hidden section of list items no longer contains list items, hide the button */
+.see-more:not(:has(li)) {
   display: none;
 }
