@@ -1,23 +1,3 @@
-/*
-
-You are at the court for a traffic ticket and there are 4 other people with you. You are told that everyone’s hearing is in alphabetical order and it takes 30 minutes for each hearing. All of the judges are free now and can see one person at a time. How long will it take for your hearing to end?
-
-Your inputs are:
-
-string - your name
-int - number of judges
-string - names of four other people separated by space
-
-Example:
-court(“Jules", 3, "Adam Betty Frank Mike”)
-60
-
-court(“Zane", 1, "Mark Hank Ana Vivian")
-150
-
-Write the fastest JavaScript routine (include a simple benchmark) that you possibly can. Submit when you can not get it any faster and explain your optimization journey.
-
-*/
 const HEARING_TIME_MINS = 30;
 const MY_NAME = "Tanner";
 const OTHER_DEFENDANTS = "Vladimir Raghu Norman Stephen";
